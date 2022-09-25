@@ -31,23 +31,22 @@ All responses are of JSON format:
 ```
 
 
-### Endpoints
+## Endpoints
 
-##### Ping
-**Ping request** 
+### Ping
+#### Ping request
 `GET /ping/`
-
-**Ping response**
-###### Request OK- 200
+#### Ping response
+Request OK- 200
 ```
 {
     "msg": "hello world"
 }
 ```
 
-#### Authentication
-##### Register
-**Register request**
+### Authentication
+#### Register
+##### Register request
 `POST /auth/register/`
 ```
 {
@@ -55,17 +54,16 @@ All responses are of JSON format:
   "password": "Password@123"
 }
 ```
-
-**Register response**
-###### Request OK- 200
+##### Register response
+Request OK- 200
 ```
 {
     "msg": "user is successfully saved"
 }
 ```
 
-##### Login
-**Login request**
+#### Login
+##### Login request
 `POST /auth/login/`
 ```
 {
@@ -73,9 +71,8 @@ All responses are of JSON format:
   "password": "Password@123"
 }
 ```
-
-**Login response**
-###### Request OK- 200
+##### Login response
+Request OK- 200
 ```
 {
     "msg": "You have logged in successfully",
@@ -85,12 +82,11 @@ All responses are of JSON format:
 }
 ```
 
-##### Logout
-**Logout request**
+#### Logout
+##### Logout request
 `DELETE /auth/logout/`
-
-**Logout response**
-###### Request OK- 200
+##### Logout response
+Request OK- 200
 ```
 {
     "msg": "Logout Success"
